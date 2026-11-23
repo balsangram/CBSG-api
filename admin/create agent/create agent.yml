@@ -1,0 +1,42 @@
+info:
+  name: create agent
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/admin/agents"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: ania1
+      - name: email
+        type: text
+        value: ania1@gmail.com
+      - name: phone
+        type: text
+        value: "6666666661"
+      - name: photo
+        type: file
+        value:
+          - /home/lucky/Pictures/_ (10).jpeg
+        contentType: image/jpeg
+      - name: role
+        type: text
+        value: executive_manager
+      - name: role
+        type: text
+        value: team_lead
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{admin_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

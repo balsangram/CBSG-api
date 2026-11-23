@@ -1,0 +1,24 @@
+info:
+  name: send otp
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/auth/agent/send-otp"
+  body:
+    type: json
+    data: |-
+      {
+        "phone":"6666666666",
+          "role": "executive_manager"
+      //     "role": "team_lead"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

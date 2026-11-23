@@ -1,0 +1,69 @@
+info:
+  name: edit profile
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{base_url}}/customer/profile"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: sangram
+      - name: email
+        type: text
+        value: sangram@gmail.com
+      - name: photo
+        type: file
+        value:
+          - /home/lucky/Pictures/_ (10).jpeg
+        contentType: image/jpeg
+      - name: fathersName
+        type: text
+        value: minaketan
+      - name: dob
+        type: text
+        value: 11/12/2026
+      - name: address
+        type: text
+        value: bhadrak
+      - name: pinCode
+        type: text
+        value: "756100"
+      - name: aadhar
+        type: text
+        value: "987987987321"
+      - name: aadharDocument
+        type: file
+        value:
+          - /home/lucky/Pictures/DotTalk.png
+        contentType: image/png
+      - name: pan
+        type: text
+        value: ABCDE19922
+      - name: panDocument
+        type: file
+        value:
+          - /home/lucky/Pictures/image (4).png
+        contentType: image/png
+      - name: bankName
+        type: text
+        value: HDFC
+      - name: accountNumber
+        type: text
+        value: "123456789"
+      - name: ifscCode
+        type: text
+        value: HDFC0000123
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDAyOTU2ZGZmOThjNGI4OTQ3OWQ3YiIsInJvbGUiOiJjdXN0b21lciIsImFjY291bnRNb2RlbCI6IkN1c3RvbWVyIiwiaWF0IjoxNzk1NDE5MDI5LCJleHAiOjE3OTYwMjM4Mjl9.YfO8VuSPhujmbEnqrF6k3NXtjaLEVkN6yiwIXtfC4d0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

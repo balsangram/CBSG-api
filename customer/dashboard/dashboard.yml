@@ -1,0 +1,18 @@
+info:
+  name: dashboard
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{base_url}}/customer/dashboard"
+  auth:
+    type: bearer
+    token: "{{customer_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

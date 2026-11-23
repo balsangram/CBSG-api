@@ -1,0 +1,38 @@
+info:
+  name: create customer
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/agent/customers"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: lucky1
+      - name: phone
+        type: text
+        value: "7777777774"
+      - name: email
+        type: text
+        value: lucky1@gmail.com
+      - name: photo
+        type: file
+        value:
+          - /home/lucky/Pictures/face1.jpg
+        contentType: image/jpeg
+      - name: address
+        type: text
+        value: bhadrak
+  auth:
+    type: bearer
+    token: "{{team_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

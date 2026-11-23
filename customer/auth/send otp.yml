@@ -1,0 +1,22 @@
+info:
+  name: send otp
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/auth/customer/send-otp"
+  body:
+    type: json
+    data: |-
+      {
+        "phone":"7777777771"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

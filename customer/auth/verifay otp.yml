@@ -1,0 +1,25 @@
+info:
+  name: verifay otp
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_url}}/auth/customer/verify-otp"
+  body:
+    type: json
+    data: |-
+      {
+        "phone": "7777777771",
+        "otp": "123456",
+        "id": "6b03eb86337b7f885b343839",
+        "fcmToken":""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

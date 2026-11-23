@@ -1,0 +1,25 @@
+info:
+  name: "verifay otp "
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{base_url}}/auth/admin/verify-otp"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "admin@cbsg.com",
+        "otp": "123456",
+        "id": "6b0011a92feb8b26513b0904",
+        "fcmToken":""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
