@@ -57,9 +57,15 @@ http:
       - name: ifscCode
         type: text
         value: HDFC0000123
+      - name: nominee
+        type: text
+        value: viki
+      - name: nomineeRelation
+        type: text
+        value: brother
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDAyOTU2ZGZmOThjNGI4OTQ3OWQ3YiIsInJvbGUiOiJjdXN0b21lciIsImFjY291bnRNb2RlbCI6IkN1c3RvbWVyIiwiaWF0IjoxNzk1NDE5MDI5LCJleHAiOjE3OTYwMjM4Mjl9.YfO8VuSPhujmbEnqrF6k3NXtjaLEVkN6yiwIXtfC4d0
+    token: "{{customer_token}}"
 
 settings:
   encodeUrl: true

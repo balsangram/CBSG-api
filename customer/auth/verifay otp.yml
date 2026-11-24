@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-        "phone": "7777777771",
+        "phone": "8050012715",
         "otp": "123456",
-        "id": "6b03eb86337b7f885b343839",
+        "id": "6b05112adc54138607baa57a",
         "fcmToken":""
       }
   auth: inherit

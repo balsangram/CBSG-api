@@ -11,13 +11,13 @@ http:
     data:
       - name: name
         type: text
-        value: lucky1
+        value: prajwala
       - name: phone
         type: text
-        value: "7777777774"
+        value: "8050012715"
       - name: email
         type: text
-        value: lucky1@gmail.com
+        value: prajwala@gmail.com
       - name: photo
         type: file
         value:
@@ -28,7 +28,7 @@ http:
         value: bhadrak
   auth:
     type: bearer
-    token: "{{team_token}}"
+    token: "{{manager_token}}"
 
 settings:
   encodeUrl: true
