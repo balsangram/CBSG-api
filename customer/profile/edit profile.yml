@@ -18,8 +18,8 @@ http:
       - name: photo
         type: file
         value:
-          - /home/lucky/Pictures/_ (10).jpeg
-        contentType: image/jpeg
+          - C:\Users\Prajwala Nagekar\Downloads\Illustration.webp
+        contentType: image/webp
       - name: fathersName
         type: text
         value: minaketan
@@ -38,16 +38,16 @@ http:
       - name: aadharDocument
         type: file
         value:
-          - /home/lucky/Pictures/DotTalk.png
-        contentType: image/png
+          - C:\Users\Prajwala Nagekar\Downloads\WhatsApp Image 2026-11-15 at 12.01.28 AM (1).jpeg
+        contentType: image/jpeg
       - name: pan
         type: text
         value: ABCDE19922
       - name: panDocument
         type: file
         value:
-          - /home/lucky/Pictures/image (4).png
-        contentType: image/png
+          - C:\Users\Prajwala Nagekar\Downloads\WhatsApp Image 2026-11-15 at 12.01.27 AM (1).jpeg
+        contentType: image/jpeg
       - name: bankName
         type: text
         value: HDFC
@@ -59,6 +59,7 @@ http:
         value: HDFC0000123
       - name: nominee
         type: text
+<<<<<<< Updated upstream
         value: viki
       - name: nomineeRelation
         type: text
@@ -66,6 +67,15 @@ http:
   auth:
     type: bearer
     token: "{{customer_token}}"
+=======
+        value: test
+      - name: nomineeRelation
+        type: text
+        value: test
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDU3ZmRkNmUwODQwMTI2ZGFjMmI2NyIsInJvbGUiOiJjdXN0b21lciIsImFjY291bnRNb2RlbCI6IkN1c3RvbWVyIiwiaWF0IjoxNzk1NTIyNTU2LCJleHAiOjE3OTYxMjczNTZ9.OghxXcl11poJlXod6FkL5LgRUILc2JOrZ5cGp8cB1kA
+>>>>>>> Stashed changes
 
 settings:
   encodeUrl: true

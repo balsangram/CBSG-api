@@ -10,9 +10,15 @@ http:
     type: json
     data: |-
       {
+<<<<<<< Updated upstream
         "phone": "8050012715",
         "otp": "123456",
         "id": "6b05112adc54138607baa57a",
+=======
+        "phone": "8050012711",
+        "otp": "123456",
+        "id": "6b057ff16e0840126dac2b68",
+>>>>>>> Stashed changes
         "fcmToken":""
       }
   auth: inherit

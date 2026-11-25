@@ -10,7 +10,11 @@ http:
     type: json
     data: |-
       {
+<<<<<<< Updated upstream
         "phone":"8050012715"
+=======
+        "phone":"8050012711"
+>>>>>>> Stashed changes
       }
   auth: inherit
 

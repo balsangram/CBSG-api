@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: "{{base_url}}/auth/admin/login"
+  url: "{{localURL}}/api/v1/auth/admin/login"
   body:
     type: json
     data: |-
       {
-        "email":"admin@cbsg.com",
+        "email":"prajwalanagekar@gmail.com",
         "password":"ChangeThisPassword123!"
       }
   auth: inherit

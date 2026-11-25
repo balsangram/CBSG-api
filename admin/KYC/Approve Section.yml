@@ -1,0 +1,16 @@
+info:
+  name: Approve Section
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/admin/kyc/{{customerId}}/sections/{{section}}/approve"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

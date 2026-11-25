@@ -1,0 +1,24 @@
+info:
+  name: Get Customer KYC
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{base_url}}/admin/kyc/{{customerId}}"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDUxMTZhNGQzOGJiMzA5N2Y3ZTk5OSIsInJvbGUiOiJhZG1pbiIsImFjY291bnRNb2RlbCI6IkFkbWluIiwiaWF0IjoxNzk1NDk0NzY1LCJleHAiOjE3OTYwOTk1NjV9.1sqLpfFaESSdONoffb_5C9IWmt6oqVutMEjrajr7yf4
+  auth: inherit
+
+runtime:
+  variables:
+    - name: customerId
+      value: 6b002956dff98c4b89479d7b
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

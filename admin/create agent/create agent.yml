@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{base_url}}/admin/agents"
+  url: "{{base_url}}/api/v1/admin/agents"
   body:
     type: multipart-form
     data:
@@ -21,7 +21,7 @@ http:
       - name: photo
         type: file
         value:
-          - /home/lucky/Pictures/_ (10).jpeg
+          - C:\Users\Prajwala Nagekar\Downloads\WhatsApp Image 2026-11-15 at 12.01.25 AM.jpeg
         contentType: image/jpeg
       - name: role
         type: text
@@ -33,6 +33,11 @@ http:
   auth:
     type: bearer
     token: "{{admin_token}}"
+
+runtime:
+  variables:
+    - name: admin_token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDUxMTZhNGQzOGJiMzA5N2Y3ZTk5OSIsInJvbGUiOiJhZG1pbiIsImFjY291bnRNb2RlbCI6IkFkbWluIiwiaWF0IjoxNzk1NDk0NzY1LCJleHAiOjE3OTYwOTk1NjV9.1sqLpfFaESSdONoffb_5C9IWmt6oqVutMEjrajr7yf4
 
 settings:
   encodeUrl: true

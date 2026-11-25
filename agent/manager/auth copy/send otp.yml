@@ -10,7 +10,11 @@ http:
     type: json
     data: |-
       {
+<<<<<<< Updated upstream
         "phone":"6370404471",
+=======
+        "phone":"6666666661",
+>>>>>>> Stashed changes
           "role": "executive_manager"
       //     "role": "team_lead"
       }

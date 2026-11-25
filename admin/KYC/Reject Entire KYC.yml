@@ -1,19 +1,19 @@
 info:
-  name: "verifay otp "
+  name: Reject Entire KYC
   type: http
   seq: 3
 
 http:
   method: POST
-  url: "{{base_url}}/auth/admin/verify-otp"
+  url: "{{baseUrl}}/admin/kyc/{{customerId}}/reject"
+  headers:
+    - name: Content-Type
+      value: application/json
   body:
     type: json
     data: |-
       {
-        "email": "admin@cbsg.com",
-        "otp": "123456",
-        "id": "6b0011a92feb8b26513b0904",
-        "fcmToken":""
+        "reason": "Documents do not match the registered details"
       }
   auth: inherit
 

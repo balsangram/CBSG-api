@@ -1,0 +1,39 @@
+info:
+  name: Create Plan
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{localURL}}/api/v1/admin/plans"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: "Bearer "
+  body:
+    type: json
+    data: |-
+      {
+        "schemeName": "Monthly Savings Plan",
+        "planType": "Saving",
+        "minimumInvestmentAmount": 1000,
+        "payout": 12,
+        "monthlyInterest": 1.5,
+        "monthlyInterestDate": "2026-12-05T00:00:00.000Z",
+        "planRules": [
+          {
+            "ruleName": "Lock-in",
+            "description": "Amount stays invested for 12 months"
+          }
+        ],
+        "status": "PUBLISHED"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

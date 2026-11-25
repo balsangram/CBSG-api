@@ -14,21 +14,33 @@ http:
         value: prajwala
       - name: phone
         type: text
+<<<<<<< Updated upstream
         value: "8050012715"
       - name: email
         type: text
         value: prajwala@gmail.com
+=======
+        value: "8050012711"
+      - name: email
+        type: text
+        value: praj123@gmail.com
+>>>>>>> Stashed changes
       - name: photo
         type: file
         value:
-          - /home/lucky/Pictures/face1.jpg
+          - C:\Users\Prajwala Nagekar\Downloads\WhatsApp Image 2026-11-15 at 12.01.18 AM.jpeg
         contentType: image/jpeg
       - name: address
         type: text
-        value: bhadrak
+        value: bangalore
   auth:
     type: bearer
     token: "{{manager_token}}"
+
+runtime:
+  variables:
+    - name: team_token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDUxNzJkODk0NzAxYWE4ZjEwMmIwNiIsInJvbGUiOiJleGVjdXRpdmVfbWFuYWdlciIsImFjY291bnRNb2RlbCI6IkFnZW50IiwiaWF0IjoxNzk1NDk1Nzg1LCJleHAiOjE3OTYxMDA1ODV9.EmzSK7iK9i89u6wbk6m2u_w84t1nIBAQ1bxITyAoECc
 
 settings:
   encodeUrl: true
